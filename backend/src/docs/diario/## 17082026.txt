@@ -1,0 +1,17 @@
+## 17/08/2026
+
+### Problemas encontrados
+
+- Erro MODULE_NOT_FOUND em auth.routes.js.
+- Estrutura backend/src e src misturadas.
+- Erro "argument handler must be a function".
+
+### O que foi resolvido
+
+- Caminhos corrigidos.
+- Rotas localizadas corretamente.
+
+### Próximo passo
+
+- Revisar exports das rotas.
+- Fazer a API subir sem erros.

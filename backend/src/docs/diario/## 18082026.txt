@@ -1,0 +1,23 @@
+# 18/08/2026
+
+## Problema
+
+TypeError: argument handler must be a function
+
+## Causa
+
+auth.routes.js não exportava um Router do Express.
+
+## Solução
+
+Criação correta da rota:
+
+const router = express.Router();
+
+module.exports = router;
+
+## Resultado
+
+API iniciada com sucesso.
+
+Servidor rodando na porta 3000.

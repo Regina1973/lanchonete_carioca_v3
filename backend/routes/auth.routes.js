@@ -1,1 +1,11 @@
-const authMiddleware = require("../middlewares/auth.middleware");
+const express = require("express");
+
+const router = express.Router();
+
+router.post("/login", (req, res) => {
+  res.json({
+    message: "Login realizado"
+  });
+});
+
+module.exports = router;

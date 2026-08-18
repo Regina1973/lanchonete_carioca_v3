@@ -2,8 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-const authRoutes = require("./src/routes/auth.routes");
-const userRoutes = require("./src/routes/user.routes");
+const authRoutes = require("./backend/src/routes/auth.routes");
+const userRoutes = require("./backend/src/routes/user.routes");
 
 const app = express();
 
