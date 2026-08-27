@@ -92,17 +92,13 @@ exports.register = (req, res) => {
       user: newUser
     });
 
-  } catch (error) {
+    } catch (error) {
+    console.error("ERRO LOGIN:", error);
+
     return res.status(500).json({
       success: false,
       message: "Erro interno do servidor"
     });
   }
 };
- userService.createUser(newUser);
-
-  return res.status(201).json({
-    success: true,
-    user: newUser
-  });
-};
+ 

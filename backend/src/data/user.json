@@ -2,13 +2,7 @@
   {
     "id": 1,
     "email": "admin@email.com",
-    "password": "...",
+    "password": "$2b$10$t6XDLi7mbk0GgyB5UMY1l.g2Su/Iaf.vNUnpNxq74LzM5CelXQr7S",
     "role": "admin"
-  },
-  {
-    "id": 2,
-    "email": "funcionario@email.com",
-    "password": "...",
-    "role": "employee"
   }
 ]
