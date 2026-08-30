@@ -1,0 +1,20 @@
+Como implementar o CRUD de produtos?
+Como proteger rotas com middleware?
+Como testar rotas protegidas com JWT?
+
+
+Como testar o middleware localmente?
+Como proteger rotas com middleware?
+Como usar o middleware em rotas específicas?
+
+Como gerar um token válido?
+Como proteger múltiplas rotas?
+Como usar variáveis de ambiente?
+
+Como gerar um token válido?
+Como proteger múltiplas rotas?
+Como usar variáveis de ambiente?
+
+Como enviar token no PowerShell?
+Como proteger múltiplas rotas?
+Como usar variáveis de ambiente?
