@@ -23,5 +23,7 @@ exports.create = (req, res) => {
     newProduct
   );
 
-  res.status(201).json(newProduct);
+  return res.status(201).json(
+    newProduct
+  );
 };
