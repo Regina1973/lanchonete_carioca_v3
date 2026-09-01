@@ -11,6 +11,9 @@ const userRoutes =
 const productRoutes =
   require("./backend/src/routes/product.routes");
 
+const stockRoutes =
+require("./backend/src/routes/stock.routes");
+
 const app = express();
 
 app.use(cors());
@@ -22,7 +25,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 
 app.use("/api/products", productRoutes);
-
+app.use("/api/stock", stockRoutes);
 /*
 Agora nao tem banco, mas quando houver
 
