@@ -11,5 +11,10 @@ router.get(
   stockController.getAll
 );
 
+router.post(
+  "/in",
+  stockController.stockIn
+);
+
 module.exports = router;
 

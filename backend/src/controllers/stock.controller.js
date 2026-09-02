@@ -7,3 +7,18 @@ exports.getAll = (req, res) => {
 
   return res.json(stock);
 };
+
+exports.stockIn = (req, res) => {
+  const { productId, quantity } =
+    req.body;
+
+  const stock =
+    stockService.addStock(
+      productId,
+      quantity
+    );
+
+  return res.status(201).json(
+    stock
+  );
+};

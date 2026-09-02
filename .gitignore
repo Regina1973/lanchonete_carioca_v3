@@ -1,2 +1,5 @@
-node_modules/
-.env
+*.zip
+
+
+lanchonete_carioca_v3/
+sabor_carioca_backup
