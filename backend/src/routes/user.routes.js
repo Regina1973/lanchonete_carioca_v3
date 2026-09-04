@@ -6,6 +6,19 @@ const router = express.Router();
 const authMiddleware =
   require("../middlewares/auth.middleware");
 
+const userController =
+  require("../controllers/user.controller");
+
+router.get(
+  "/",
+  userController.getUsers
+);
+
+router.post(
+  "/",
+  userController.createUser
+);
+
 router.get(
   "/profile",
   authMiddleware,
@@ -18,4 +31,3 @@ router.get(
 );
 
 module.exports = router;
-``
