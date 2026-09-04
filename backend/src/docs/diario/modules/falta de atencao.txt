@@ -1,0 +1,5 @@
+//evitar fazer 
+
+product.controller.js
+products.controller.js
+product.controler.js

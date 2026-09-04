@@ -1,0 +1,12 @@
+backend/
+│
+├── Index.js
+│
+└── src/
+    ├── routes/
+    ├── controllers/
+    ├── services/
+    ├── middlewares/
+    ├── data/
+    ├── utils/
+    └── docs/
