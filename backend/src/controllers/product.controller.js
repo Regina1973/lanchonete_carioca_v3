@@ -76,3 +76,4 @@ exports.remove = (req, res) => {
     message: "Produto removido com sucesso"
   });
 };
+

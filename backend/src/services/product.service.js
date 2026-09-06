@@ -77,6 +77,7 @@ function deleteProduct(id) {
   return true;
 }
 
+
 module.exports = {
   getProducts,
   createProduct,
