@@ -18,7 +18,31 @@ exports.stockIn = (req, res) => {
       quantity
     );
 
-  return res.status(201).json(
-    stock
-  );
+  return res.status(201).json(stock);
+};
+
+exports.stockOut = (req, res) => {
+  const { productId, quantity } =
+    req.body;
+
+  const stock =
+    stockService.removeStock(
+      productId,
+      quantity
+    );
+
+  if (stock === null) {
+    return res.status(404).json({
+      message:
+        "Produto não encontrado no estoque"
+    });
+  }
+
+  if (stock === false) {
+    return res.status(400).json({
+      message: "Estoque insuficiente"
+    });
+  }
+
+  return res.json(stock);
 };

@@ -46,8 +46,31 @@ function addStock(productId, quantity) {
   return newItem;
 }
 
+
+function removeStock(productId, quantity) {
+  const stock = getStock();
+
+  const itemIndex = stock.findIndex(
+    item => item.productId === productId
+  );
+
+  if (itemIndex === -1) {
+    return null;
+  }
+
+  if (stock[itemIndex].quantity < quantity) {
+    return false;
+  }
+
+  stock[itemIndex].quantity -= quantity;
+
+  saveStock(stock);
+
+  return stock[itemIndex];
+}
 module.exports = {
   getStock,
   addStock,
-  saveStock
+  saveStock,
+  removeStock
 };

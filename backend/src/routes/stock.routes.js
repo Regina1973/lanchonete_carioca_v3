@@ -16,5 +16,9 @@ router.post(
   stockController.stockIn
 );
 
-module.exports = router;
+router.post(
+  "/out",
+  stockController.stockOut
+);
 
+module.exports = router;
