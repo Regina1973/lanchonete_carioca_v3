@@ -1,0 +1,20 @@
+# Dependências
+node_modules/
+
+# Frontend removido da recuperação do backend
+frontend/
+
+# Variáveis de ambiente
+.env
+
+# Logs
+logs/
+*.log
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Sistema
+.DS_Store
+Thumbs.db
