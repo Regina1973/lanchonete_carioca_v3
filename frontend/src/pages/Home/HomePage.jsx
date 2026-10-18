@@ -1,11 +1,13 @@
+import DashboardLayout from "../../layouts/DashboardLayout";
+
 export default function HomePage() {
   return (
-    <main>
-      <h1>Lanchonete Carioca</h1>
+    <DashboardLayout>
+      <h2>Home</h2>
 
       <p>
         Onde o lanche encontra a resenha.
       </p>
-    </main>
+    </DashboardLayout>
   );
 }
