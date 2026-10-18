@@ -1,7 +1,3 @@
-import HomePage from "@/pages/Home/HomePage";
-
-<Route path="/" element={<HomePage />} />
-
 export default function HomePage() {
   return (
     <main>
