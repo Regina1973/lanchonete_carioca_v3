@@ -1,33 +1,21 @@
-export default function DashboardLayout({
-  children,
-}) {
+import Header from "../components/navigation/Header";
+import Sidebar from "../components/navigation/Sidebar";
+import Footer from "../components/common/Footer";
+
+export default function DashboardLayout({ children }) {
   return (
-    <div>
-      <header>
-        <h1>Lanchonete Carioca</h1>
-      </header>
+    <div className="app-layout">
+      <Header />
 
-      <div style={{ display: "flex" }}>
-        <aside>
-          <ul>
-            <li>Dashboard</li>
-            <li>Produtos</li>
-            <li>Categorias</li>
-            <li>Estoque</li>
-            <li>Pedidos</li>
-            <li>Relatórios</li>
-          </ul>
-        </aside>
+      <div className="app-container">
+        <Sidebar />
 
-        <main>
+        <main className="app-content">
           {children}
         </main>
       </div>
 
-      <footer>
-        <p>Lanchonete Carioca v2.4.4</p>
-        <p>Onde o lanche encontra a resenha.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

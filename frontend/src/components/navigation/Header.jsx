@@ -1,33 +1,21 @@
+import Navbar from "./Navbar";
 import { useTheme } from "../../contexts/ThemeContext";
 
 export default function Header() {
   const { changeTheme } = useTheme();
 
   return (
-    <header>
-      <button
-        onClick={() => changeTheme("light")}
-      >
-        Claro
-      </button>
+    <header className="app-header">
+      <div>
+        <h1>Lanchonete Carioca</h1>
+        <small>Onde o lanche encontra a resenha.</small>
+      </div>
 
-      <button
-        onClick={() => changeTheme("dark")}
-      >
-        Escuro
-      </button>
+      <Navbar />
 
-      <button
-        onClick={() => changeTheme("mono-light")}
-      >
-        Mono Claro
-      </button>
-
-      <button
-        onClick={() => changeTheme("mono-dark")}
-      >
-        Mono Escuro
-      </button>
+      <div>
+        {/* botões de tema */}
+      </div>
     </header>
   );
 }
