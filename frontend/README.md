@@ -1,5 +1,29 @@
 # React + Vite
 
+## Navegação e produtos
+
+- `/` é a Home provisória e oferece acesso ao catálogo. A futura Landing Page
+  deve substituir essa Home, preservando o link para `/products`.
+- `/products` usa `src/pages/products/Products.jsx` como catálogo oficial;
+  `/products/:id` usa `src/pages/products/ProductDetail.jsx` para detalhes.
+  O catálogo renderiza `ProductCard` e ambas as páginas leem o mesmo
+  `ProductContext`.
+- `/categories` e `/orders` estão reservadas, com páginas provisórias. Rotas
+  desconhecidas exibem uma página de não encontrado.
+- O `ProductProvider` começa com uma lista vazia e aceita produtos no formato
+  `{ id, nome, descricao, preco }`. Ainda não há integração com dados reais:
+  o servidor iniciado pelo pacote raiz não registra uma API de produtos, e
+  os arquivos de backend existentes referenciam componentes ou dados ausentes.
+  O catálogo e os detalhes exibem estados vazios até essa integração existir.
+- Não existem, neste checkout, páginas duplicadas de produtos, `DashboardLayout`,
+  `ThemeProvider` ou os arquivos de tema mencionados na auditoria. As variáveis
+  em `index.css` usam a preferência clara/escura do sistema. A Landing Page
+  poderá reutilizá-las; integração com layout e temas adicionais fica pendente.
+
+Para validar o frontend: `npm install`, `npm run lint` e `npm run build` no
+diretório `frontend`. Não há infraestrutura de testes automatizados para o
+frontend neste checkout.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
